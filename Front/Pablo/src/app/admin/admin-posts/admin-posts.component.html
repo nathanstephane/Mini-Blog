@@ -1,0 +1,24 @@
+
+
+<div class="container">
+    <p> Hello Admin! </p>
+<h1>All posts</h1>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td>{{post.title}}</td>
+            <td>
+                <a [routerLink]="['/admin/posts', post.id]">View</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

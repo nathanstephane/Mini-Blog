@@ -1,0 +1,10 @@
+<p>admin-view-post component</p>
+<div class="container" *ngIf="post">
+    <br>
+    <form #form="ngForm">
+        <div class="mb-3">
+            <label class="form-label">Id</label>
+            <input type="text" class="form-control" name="id" [(ngModel)] ="post.id">
+        </div>
+    </form>
+</div>
